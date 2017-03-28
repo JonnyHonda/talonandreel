@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+# Specify name of a built-in theme
+THEME = "pelican-free-agent"
 
-AUTHOR = u"Te'anos"
+AUTHOR = u"Talon and Reel"
 SITENAME = u'Talon And Reel'
 SITESUBTITLE = 'Something - Something - Dark Side'
 SITEURL = ''
@@ -14,7 +16,6 @@ STATIC_PATHS = [ 'images','mail','js', 'css', 'fonts']
 EXTRA_PATH_METADATA = {
     'static/images/portfolio': {'path': 'images/portfolio'},
     }
-TIMEZONE = 'America/Phoenix'
 
 DEFAULT_LANG = 'en'
 BOOTSTRAP_FILE = 'bootstrap.min.css'
