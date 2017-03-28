@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Free Agent'
-SITENAME = 'Free Agent'
+AUTHOR = u"Te'anos"
+SITENAME = u'Talon And Reel'
 SITESUBTITLE = 'Something - Something - Dark Side'
 SITEURL = ''
 
@@ -14,7 +14,7 @@ STATIC_PATHS = [ 'images','mail','js', 'css', 'fonts']
 EXTRA_PATH_METADATA = {
     'static/images/portfolio': {'path': 'images/portfolio'},
     }
-TIMEZONE = 'Europe/London'
+TIMEZONE = 'America/Phoenix'
 
 DEFAULT_LANG = 'en'
 BOOTSTRAP_FILE = 'bootstrap.min.css'
@@ -30,13 +30,23 @@ SCRIPTS = [
 	'contact_me.js',
 	'freeagent.js'
 ]
+TIMEZONE = 'Europe/London'
+
+DEFAULT_LANG = u'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
 DIRECT_TEMPLATES = ['index']
+# Blogroll
+LINKS = (('Pelican', 'http://getpelican.com/'),
+         ('Python.org', 'http://python.org/'),
+         ('Jinja2', 'http://jinja.pocoo.org/'),
+         ('You can modify those links in your config file', '#'),)
 
 # Top Menu Links
 NAVLINKS = (
@@ -45,6 +55,9 @@ NAVLINKS = (
 	('#about', 'About'),
 	('#contact', 'Contact')
 )
+# Social widget
+SOCIAL = (('You can add links in your config file', '#'),
+          ('Another social link', '#'),)
 
 # Portfolio Name
 PORTFOLIO = 'Portfolio'
