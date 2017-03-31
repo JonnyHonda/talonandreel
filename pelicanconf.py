@@ -69,7 +69,7 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 NAVLINKS = (
 	('#page-top', ''),
 	('#portfolio', 'Portfolio'),
-	('/pages/gallery.html','Gallery'),
+#	('/pages/gallery.html','Gallery'),
 	('#about', 'About'),
 	('#contact', 'Contact')
 )
