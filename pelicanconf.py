@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 # Specify name of a built-in theme
+
 THEME = "pelican-free-agent"
 
 AUTHOR = u"Talon and Reel"
@@ -9,6 +10,18 @@ SITENAME = u'Talon And Reel'
 SITESUBTITLE = 'Something - Something - Dark Side'
 SITEURL = ''
 
+# Gallery configuration
+PLUGIN_PATHS = ["plugins", "/Users/johnburrin/Projects/pelican-plugins"]
+PLUGINS = ["gallery", "thumbnailer","lightbox"]
+GALLERY_PATH = "images/portfolio/gallery"
+
+
+# Thumbnailer configuration
+IMAGE_PATH = GALLERY_PATH
+THUMBNAIL_DIR = "images/portfolio/thumbnails"
+THUMBNAIL_KEEP_NAME = True
+THUMBNAIL_KEEP_TREE = True
+THUMBNAIL_SIZES = {'500x': '500x?'}
 
 THEME_STATIC_DIR = 'static'
 PATH = 'content'
@@ -17,7 +30,9 @@ EXTRA_PATH_METADATA = {
     'static/images/portfolio': {'path': 'images/portfolio'},
     }
 
-DEFAULT_LANG = 'en'
+
+DELETE_OUTPUT_DIRECTORY = True
+
 BOOTSTRAP_FILE = 'bootstrap.min.css'
 CSS_FILE = 'freeagent.css'
 FONTS = 'fonts'
@@ -29,7 +44,8 @@ SCRIPTS = [
 	'cbpAnimatedHeader.js',
 	'jqBootstrapValidation.js',
 	'contact_me.js',
-	'freeagent.js'
+	'freeagent.js',
+        'slideshow.js'
 ]
 TIMEZONE = 'Europe/London'
 
@@ -53,6 +69,7 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 NAVLINKS = (
 	('#page-top', ''),
 	('#portfolio', 'Portfolio'),
+	('/pages/gallery.html','Gallery'),
 	('#about', 'About'),
 	('#contact', 'Contact')
 )

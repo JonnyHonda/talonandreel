@@ -17,6 +17,7 @@
 
     <!-- Custom CSS -->
     <link href="/static/css/freeagent.css" rel="stylesheet">
+     <link href="/static/css/slideshow.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="/static/fonts/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -58,6 +59,9 @@
                 </li>
                 <li class="page-scroll">
                     <a href="#portfolio">Portfolio</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="/pages/gallery.html">Gallery</a>
                 </li>
                 <li class="page-scroll">
                     <a href="#about">About</a>
@@ -317,9 +321,23 @@
 			                    <div class="modal-body">
 			                        <h2>Custom Furry Bird Head</h2>
 			                        <hr class="star-primary">
-			                        <img src="/images/portfolio/escape.png" class="img-responsive img-centered" alt="">
-			                        <p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nunc libero, ultrices id convallis nec, lacinia eu ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam mollis neque at lobortis posuere. Pellentesque mattis sem at mi maximus sagittis. Nam vel magna eu quam porta dictum. Ut id mi in enim finibus auctor. Suspendisse et mi et metus volutpat imperdiet in at mauris. Phasellus lorem enim, elementum id efficitur vel, porta sit amet eros. Aliquam venenatis lacus id sapien volutpat, sit amet ornare nisl tempus. Praesent tellus nisl, iaculis id felis quis, pulvinar consectetur justo. Sed hendrerit lectus consequat, venenatis purus ut, pulvinar neque. Phasellus gravida sollicitudin justo, nec volutpat arcu tempor ac. Duis finibus laoreet nulla, in imperdiet ipsum varius a. Sed orci purus, tempor a libero sit amet, viverra rutrum mi. Pellentesque in mi eu est faucibus venenatis ac a massa.</p>
-<p><img src="/images/portfolio/golden.png" align="left" />Aenean euismod porta risus, eget facilisis tortor viverra et. Sed quis venenatis risus. Vestibulum vitae sem eget metus pharetra sollicitudin. Quisque dignissim neque at elementum gravida. Fusce non elit pulvinar, tempus lorem at, interdum augue. Quisque pellentesque, nulla eu posuere tempus, leo lacus commodo turpis, at vestibulum metus sem et justo. Morbi ac est tempus elit tempor tincidunt. Aliquam non nisl auctor, rhoncus ex sit amet, fringilla nisl. Pellentesque ut neque consectetur, lacinia quam sit amet, ultrices arcu. Suspendisse potenti. Pellentesque vestibulum neque sed ligula ornare, sed aliquam risus convallis. </p></p>
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <img src="/images/portfolio/thumbnails/500x/BirdHead/FIREC & GOLDC side 2 (600 x 500).jpeg" style="width:100%" class="img-responsive img-centered">
+          </div>
+          <div class="mySlides">
+            <img src="/images/portfolio/thumbnails/500x/BirdHead/Secretary_Bird-head.jpeg" style="width:100%" class="img-responsive img-centered">
+          </div>
+          <div class="mySlides">
+            <img src="/images/portfolio/thumbnails/500x/BirdHead/c4e0486e583b3e601c022fd93038478c.jpeg" style="width:100%" class="img-responsive img-centered">
+          </div>
+          <div class="mySlides">
+            <img src="/images/portfolio/thumbnails/500x/BirdHead/dove-49723_1280.jpeg" style="width:100%" class="img-responsive img-centered">
+          </div>
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>                                                <!-- a href="custom-furry-bird-head"><img src="/images/portfolio/escape.png" class="img-responsive img-centered" alt=""></a -->
+			                        <p></p>
 			                        <ul class="list-inline item-details">
 			                            <li>Client:
 			                                <strong><a href="http://www.demo.com">Frank Dilliger</a>
@@ -357,7 +375,10 @@
 			                    <div class="modal-body">
 			                        <h2>My first post</h2>
 			                        <hr class="star-primary">
-			                        <img src="/images/portfolio/dreams.png" class="img-responsive img-centered" alt="">
+        <div class="slideshow-container">
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>                                                <!-- a href="my-first-post"><img src="/images/portfolio/dreams.png" class="img-responsive img-centered" alt=""></a -->
 			                        <p><h2>Here comes the content of my modal "article"... Cred flexitarian meditation, ugh put a bird on it lomo biodiesel disrupt freegan banjo viral. Banjo whatever sriracha paleo. Thundercats hella pour-over, plaid disrupt fixie typewriter tofu ugh viral seitan narwhal.</h2></p>
 			                        <ul class="list-inline item-details">
 			                            <li>Client:
@@ -396,7 +417,10 @@
 			                    <div class="modal-body">
 			                        <h2>Yet Another Post</h2>
 			                        <hr class="star-primary">
-			                        <img src="/images/portfolio/roundicons.png" class="img-responsive img-centered" alt="">
+        <div class="slideshow-container">
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>                                                <!-- a href="yet-another-post"><img src="/images/portfolio/roundicons.png" class="img-responsive img-centered" alt=""></a -->
 			                        <p></p>
 			                        <ul class="list-inline item-details">
 			                            <li>Client:
@@ -459,6 +483,10 @@
 	
 		<!-- script is a local library -->
 			<script src="/static/js/freeagent.js"></script>
+		
+	
+		<!-- script is a local library -->
+			<script src="/static/js/slideshow.js"></script>
 		
 	
 
