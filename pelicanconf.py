@@ -21,7 +21,7 @@ IMAGE_PATH = GALLERY_PATH
 THUMBNAIL_DIR = "images/portfolio/thumbnails"
 THUMBNAIL_KEEP_NAME = True
 THUMBNAIL_KEEP_TREE = True
-THUMBNAIL_SIZES = {'500x': '500x?'}
+THUMBNAIL_SIZES = {'500px': '500x?', '250px': '250x?'}
 
 THEME_STATIC_DIR = 'static'
 PATH = 'content'
@@ -69,7 +69,7 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 NAVLINKS = (
 	('#page-top', ''),
 	('#portfolio', 'Portfolio'),
-#	('/pages/gallery.html','Gallery'),
+	('/pages/gallery.html','Gallery'),
 	('#about', 'About'),
 	('#contact', 'Contact')
 )
